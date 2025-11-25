@@ -200,7 +200,8 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
-
+#uv lock
+uv.lock
 # Marimo
 marimo/_static/
 marimo/_lsp/

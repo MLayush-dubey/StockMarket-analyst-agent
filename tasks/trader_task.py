@@ -5,7 +5,7 @@ from agents.trader_agent import trader_agent
 trading_task = Task(
     agent = trader_agent,
     description = (
-        "Based on the analyst's research on {stock_symbol}, develop a concrete "
+        "Based on the analyst's research on {stock}, develop a concrete "
         "trading strategy. Specify: \n"
         "1. Action: BUY/SELL/HOLD\n"
         "2. Entry price target and optimal timing\n"

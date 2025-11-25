@@ -4,7 +4,7 @@ from agents.analyst_agent import analyst_agent
 analyse_task = Task(
     agent = analyst_agent,
     description = (
-        "Analyze {stock_symbol} using comprehensive financial metrics. "
+        "Analyze {stock} using comprehensive financial metrics. "
         "Evaluate P/E ratio, revenue growth, profitability margins, debt levels, "
         "analyst predictions, and compare to industry peers. Determine if the stock "
         "is overvalued, fairly valued, or undervalued. Provide investment thesis."

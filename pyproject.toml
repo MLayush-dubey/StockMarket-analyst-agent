@@ -3,4 +3,7 @@ name = "stockmarket-analyst-agent"
 version = "0.1.0"
 description = "Add your description here"
 requires-python = ">=3.10"
-dependencies = []
+dependencies = [
+    "crewai[google-genai]>=1.6.0",
+    "litellm>=1.80.5",
+]

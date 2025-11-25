@@ -2,18 +2,18 @@ import yfinance as yf
 from crewai.tools import tool
 
 @tool("Live Stock Information Tool")
-def stock_market_tool(stock_symbol: str)-> str:
+def stock_market_tool(stock: str)-> str:
     """
     Retrieves the stock price and other relevant info for a given stock symbol using Yahoo Finance.
 
     Parameters:
-    stock_symbol(str): The ticker symbol of the stock(eg- AAPL, TSLA, MSFT)
+    stock(str): The ticker symbol of the stock(eg- AAPL, TSLA, MSFT)
 
     Return:
         str: Summary of the stock's current price, daily change and prediction for next week
     """
 
-    stock = yf.Ticker(stock_symbol)
+    stock = yf.Ticker(stock)
     info = stock.info
 
     # Current Price Data
@@ -54,7 +54,7 @@ def stock_market_tool(stock_symbol: str)-> str:
 
     # Build comprehensive summary
     summary = f"""
-    Stock: {stock_symbol}
+    Stock: {stock}
     Current Price: {current_price} {currency} (Change: {change_percent:.2f}%)
 
     VALUATION:
@@ -88,4 +88,5 @@ def stock_market_tool(stock_symbol: str)-> str:
 
     return summary
 
-print(stock_market_tool('AAPL'))
+#Example Usage
+# print(stock_market_tool('AAPL'))

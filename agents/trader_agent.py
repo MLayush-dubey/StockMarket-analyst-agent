@@ -1,9 +1,10 @@
 from crewai import Agent, LLM
+import os
 
 llm = LLM(
-    model = "ollama/gpt-oss:20b-cloud",
+    model = "gemini/gemini-2.5-pro",
     temperature=0,   #no randomness in logic
-    base_url = "http://localhost:11434",
+    api_key= os.getenv("GEMINI_API_KEY"),
     max_retries = 3,
     timeout = 180.0,
     seed = 42    #reproducible results

@@ -1,11 +1,12 @@
 from crewai import Agent, LLM
 from tools.stock_research_tool import stock_market_tool
+import os
 
 #initialize the LLM
 llm = LLM(
-    model = "ollama/gpt-oss:20b-cloud",
+    model = "gemini/gemini-2.5-pro",
     temperature=0,   #no randomness in logic
-    base_url = "http://localhost:11434",
+    api_key= os.getenv("GEMINI_API_KEY"),
     max_retries = 3,
     top_p = 0.9,   #varied vocab
     timeout = 180.0,
