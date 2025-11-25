@@ -233,6 +233,9 @@ description = (
 5. **Research Validation**: Cross-check your own analysis with AI-powered insights
 
 
+⚠️ **DISCLAIMER**: This software is for educational and informational purposes only. It does not constitute financial advice, investment advice, trading advice, or any other sort of advice. You should not treat any of the tool's output as such. Always conduct your own research and consult with a licensed financial advisor before making any investment decisions.
+
+
 ### Tool Integration
 
 Custom CrewAI tool decorator for Yahoo Finance:
@@ -328,7 +331,3 @@ For questions, issues, or collaboration:
 - Star the repository if you find it useful!
 
 ---
-
-⚠️ **DISCLAIMER**: This software is for educational and informational purposes only. It does not constitute financial advice, investment advice, trading advice, or any other sort of advice. You should not treat any of the tool's output as such. Always conduct your own research and consult with a licensed financial advisor before making any investment decisions.
-
-**Built with 🤖 for Smart Investors**
